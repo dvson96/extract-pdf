@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="test.js" defer></script>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+        text-align: center;
+    }
+    iframe {
+      width: 800px;
+      height: 400px;
+    }
+    .img-wrapper > * {
+        display: block;
+        margin: auto;
+    }
+  </style>
+  <body>
+    <div style="margin: 50px;">
+        <input type="file" id="file-pdf" accept=".pdf">
+    </div>
+    <div style="margin: 50px;">
+        <iframe src="file.pdf" frameborder="0"></iframe>
+    </div>
+    <div style="margin: 50px;">
+        <h3 style="margin: 20px;">Text</h3>
+        <p class="text"></p>
+    </div>
+    <div style="margin: 50px;">
+        <h3 style="margin: 20px;">Images</h3>
+        <div class="image"></div>
+    </div>
+  </body>
+</html>
